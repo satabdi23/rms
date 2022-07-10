@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" type="text/css"  href=  "{{ url_for('static',filename='styles/style.css') }}"> 
+
+        
+        <link rel="shortcut icon" type="image/png" href="{{ url_for('static',filename='img/favicon.png') }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static',filename='img/apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static',filename='img/favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static',filename='img/favicon-16x16.png') }}">
+        <link rel="manifest" href="/site.webmanifest">
+        
+        <title>Restaurant Management System</title>
+    </head>
+    <body>
+        <header class="header">
+        <div class="logo-box">
+            <img src="{{ url_for('static',filename='img/logo-white.png') }}" alt="logo"  class="logo">
+
+        </div>
+
+            <div class="text-box"> 
+                <h1 class="heading-primary">
+        <span class="heading-primary-main">Welcome</span>
+        <span class="heading-primary-sub">to restaurant management system</span>
+        </h1>
+           
+        <a href="{{ url_for('home') }}" class="btn btn-white btn-animated">logout</a>
+
+        </div>
+
+        </header>
+    </body>
+</html>
